@@ -10,7 +10,7 @@ import { Content } from "firebase/vertexai-preview";
 type Proptypes = {
   setDestinationsData: Dispatch<SetStateAction<Content[]>>;
   deletedDestination: Content | any;
-  setDeletedDestination: Dispatch<SetStateAction<{}>>;
+  setDeletedDestination: Dispatch<SetStateAction<any>>;
   setSuccessMessage: Dispatch<SetStateAction<string>>;
 };
 

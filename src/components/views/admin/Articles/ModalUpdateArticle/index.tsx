@@ -11,7 +11,7 @@ import { Dispatch, FormEvent, SetStateAction, useState } from "react";
 type Proptypes = {
   setArticlesData: Dispatch<SetStateAction<Content[]>>;
   updatedArticle: Content | any;
-  setUpdatedArticle: Dispatch<SetStateAction<{}>>;
+  setUpdatedArticle: Dispatch<SetStateAction<any>>;
   setSuccessMessage: Dispatch<SetStateAction<string>>;
 };
 

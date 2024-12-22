@@ -11,7 +11,7 @@ import { Dispatch, FormEvent, SetStateAction, useState } from "react";
 type Proptypes = {
   setDestinationsData: Dispatch<SetStateAction<Content[]>>;
   updatedDestination: Content | any;
-  setUpdatedDestination: Dispatch<SetStateAction<{}>>;
+  setUpdatedDestination: Dispatch<SetStateAction<any>>;
   setSuccessMessage: Dispatch<SetStateAction<string>>;
 };
 

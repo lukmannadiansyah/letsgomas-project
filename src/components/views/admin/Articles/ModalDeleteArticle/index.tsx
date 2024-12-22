@@ -10,7 +10,7 @@ import articleServices from "@/services/article";
 type Proptypes = {
   setArticlesData: Dispatch<SetStateAction<Content[]>>;
   deletedArticle: Content | any;
-  setDeletedArticle: Dispatch<SetStateAction<{}>>;
+  setDeletedArticle: Dispatch<SetStateAction<any>>;
   setSuccessMessage: Dispatch<SetStateAction<string>>;
 };
 
