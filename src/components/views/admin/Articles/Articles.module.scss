@@ -1,0 +1,91 @@
+.article {
+  width: 100%;
+  margin: 10px 0;
+  color: #272927;
+  &__successMessage {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  &__button {
+    margin: 30px 0 10px 0;
+    font-weight: bold;
+  }
+  &__wrapper {
+    max-height: 480px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+  }
+  &__wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  &__table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  &__thead {
+    background-color: #272927;
+    color: #fff;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  &__th,
+  &__td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: top;
+    white-space: normal;
+    word-wrap: break-word;
+    &:nth-child(1) {
+      width: 40px;
+    }
+    &:nth-child(2) {
+      width: 150px;
+    } 
+    &:nth-child(3) {
+      width: 680px;
+    } 
+    &:nth-child(4) {
+      width: 150px;
+    }
+    &:nth-child(5) {
+      width: 150px;
+    } 
+    &__action {
+      display: flex;
+    }
+  }
+  &__action {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__buttonUpdate {
+    background-color: #ffb200;
+    color: #fff;
+    font-weight: bold;
+    &:hover {
+      background-color: #ffb300bb;
+    }
+  }
+  &__buttonDelete {
+    background-color: #b70404;
+    color: #fff;
+    font-weight: bold;
+    &:hover {
+      background-color: #b70404ce;
+    }
+  }
+  &__tbody {
+    background-color: #fff;
+  }
+}
