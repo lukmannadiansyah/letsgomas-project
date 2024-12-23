@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  overflow-x: visible;
   align-items: center;
   background-color: #f9f9f9;
   min-height: 100vh;
@@ -83,21 +84,18 @@
     gap: 1rem;
     margin-bottom: 2rem;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    @media (max-width: 768px) {
-      gap: 0.5rem;
-    }
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scroll-snap-type: x mandatory; /* For snapping behavior */
     @media (max-width: 480px) {
-      padding-bottom: 1rem;
+      padding-bottom: 1rem; /* Beri jarak untuk scroll bar */
     }
     .imageWrapper {
-      flex: 0 0 auto;
+      flex: 0 0 auto; /* Prevent shrinking */
       width: 350px;
       height: 300px;
       overflow: hidden;
       border-radius: 8px;
-      scroll-snap-align: center;
+      scroll-snap-align: center; /* Align snapping for better UX */
       @media (max-width: 768px) {
         width: 250px;
         height: 200px;
