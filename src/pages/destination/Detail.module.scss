@@ -8,6 +8,10 @@
   margin: 0 auto;
   padding: 1rem;
   .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     width: 100%;
     padding: 5rem;
@@ -40,10 +44,10 @@
     margin-left: 20px;
     color: #444;
     @media (max-width: 768px) {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
     @media (max-width: 480px) {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
     }
   }
   .rating {
@@ -59,7 +63,7 @@
         font-size: 1.5rem;
       }
       @media (max-width: 480px) {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
     .star {
@@ -81,8 +85,14 @@
       gap: 0.5rem;
     }
     @media (max-width: 480px) {
-      flex-direction: column;
-      gap: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      overflow-x: auto;
+      /* Aktifkan scroll horizontal */
+      scroll-snap-type: x mandatory;
+      /* Efek snap scrolling */
+      padding-bottom: 1rem;
     }
     .imageWrapper {
       width: 350px;
@@ -94,8 +104,8 @@
         height: 200px;
       }
       @media (max-width: 480px) {
-        width: 100%;
-        height: auto;
+        width: 200px;
+        height: 150px;
       }
     }
     .img {
@@ -137,13 +147,6 @@
       display: flex;
       gap: 2rem;
       align-items: center;
-      @media (max-width: 768px) {
-        gap: 1rem;
-      }
-      @media (max-width: 480px) {
-        flex-direction: column;
-        gap: 0.5rem;
-      }
       .locationIcon,
       .clockIcon,
       .contactIcon {
@@ -158,10 +161,6 @@
           flex-direction: row;
           justify-content: space-between;
           gap: 2rem;
-          @media (max-width: 480px) {
-            flex-direction: column;
-            gap: 0.25rem;
-          }
         }
       }
     }
