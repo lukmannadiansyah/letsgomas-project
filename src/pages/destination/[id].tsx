@@ -66,6 +66,7 @@ const DetailDestination = ({ destination }: DestinationProps) => {
                     alt={`${destination.name} ${index + 1}`}
                     width={350}
                     height={300}
+                    className={styles.img}
                   />
                 </div>
               )
